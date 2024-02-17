@@ -1,0 +1,628 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#minicircle {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#main {
+    width: 100%;
+    background-color: black;
+}
+
+#hero {
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    padding: 35px 50px;
+    font-weight: 1000;
+    background-color: black;
+
+
+
+}
+
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#nav h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#heading {
+    margin-top: 90px;
+}
+
+
+#heading h1 {
+    font-size: 10vw;
+    font-weight: 900;
+    line-height: .9;
+    opacity: .6;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+#heading #secondh1 {
+    margin-left: 240px;
+
+}
+
+.blocktext {
+    width: fit-content;
+    flex-direction: column;
+    align-items: end;
+    display: flex;
+
+}
+
+.blocktext h5 {
+    line-height: 3.8;
+    text-align: right !important;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+#headings {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 100px;
+    padding-right: 50px;
+}
+
+#headings h5 {
+    text-transform: uppercase;
+    margin-top: .5vw;
+    font-size: 1vw;
+    text-align: right;
+}
+
+#footer {
+    padding: 0 2vw;
+    width: 100%;
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#footer a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#footer #iconset {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    opacity: .9;
+
+}
+
+#footer .circle {
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #c6c4c4;
+}
+
+
+
+#second {
+    padding-right: 10vw;
+    padding-top: 200px;
+    background-color: black;
+    width: 100%;
+    padding-left: 3vw;
+
+}
+
+.elem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #777;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    color: #fff;
+
+
+}
+
+.elem a {
+    font-size: 7.6vw;
+    opacity: .7;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+}
+
+.elemlast {
+    border-bottom-color: #777;
+}
+
+.elem img {
+    height: 150%;
+    display: block;
+    z-index: 999;
+    position: absolute;
+}
+
+#third {
+    padding: 10vw 5vw;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    background-color: black;
+    padding-left: 40vw;
+    gap: 50px;
+
+
+}
+
+#third img {
+    width: 300px;
+}
+
+#about h5 {
+    text-transform: uppercase;
+    opacity: .7;
+    margin-bottom: 2px;
+}
+
+#about a {
+    padding: 6px 17px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 100px;
+    font-size: 17px;
+
+}
+
+#about p {
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+
+#about {
+
+    color: #fff;
+    font-size: 20px;
+    width: 30rem;
+}
+
+#subscribe {
+    width: 100%;
+    color: #fff;
+    padding: 20px 30px;
+    padding-bottom: 7vw;
+    text-transform: uppercase;
+}
+
+#subscribe h5 {
+    opacity: .6
+}
+
+#subscribe h3 {
+    font-family: 14px;
+    margin-top: 10px;
+}
+#subscribe input{
+    width: 20%;
+    display: block;
+    margin-top: 5px;
+}
+#subscribe button{
+    padding: 3px 8px;
+    margin-top: 5px;
+}
+
+#foot {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+    font-size: 20px;
+}
+
+#left-footer {
+    display: flex;
+    gap: 20px;
+}
+
+#foot a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#right-footer {
+    display: flex;
+    gap: 25px;
+}
+
+/* plug page paragraph */
+#heading_plug h1 {
+    font-size: 10vw;
+    font-weight: 900;
+    line-height: .9;
+    opacity: .6;
+    margin-left: 38px;
+    text-transform: uppercase;
+}
+
+#heading_plug {
+    padding-top: 150px;
+    height: auto;
+    background-color: black;
+    color: #fff;
+}
+
+#heading_plug img,video{
+    padding: 40px 55px;
+    width: 100%;
+}
+
+.paragraph {
+
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+
+.part1,
+.part2 {
+    padding-left: 50px;
+    width: 50%;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+.width40 {
+    width: 80%;
+}
+
+.width40 h5 {
+    opacity: .4;
+}
+
+.live {
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 6px 27px;
+    border: 1px solid white;
+    border-radius: 100px;
+    font-size: 17px;
+}
+
+.live:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width:925px) {
+    .paragraph {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .part1 {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-bottom: -10px;
+
+    }
+
+    .part2 {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+.full {
+    background-color:#000000f3;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.vid {
+    background-color:#000000f3;
+    margin: auto;
+    width: 90%;
+}
+.vid12{
+    margin-left: 25%;
+}
+.vid12 img{
+   
+    width: 70%;
+}
+
+.video1 {
+    width: 100%;
+}
+
+
+.challenge {
+    background-color: black;
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 700;
+    padding: 5%;
+}
+
+.challenge h1 {
+    opacity: .7;
+}
+
+#second_plug {
+    padding-right: 10vw;
+    padding-top: 20px;
+    background-color: black;
+    width: 100%;
+    padding-left: 1vw;
+
+}
+
+.element {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #777;
+    padding: 0vw 1vw;
+    padding-right: 0;
+    color: #fff;
+}
+
+.element a {
+    font-size: 7vw;
+    opacity: .7;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+}
+
+#foot_plug {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+#left-footer_p {
+    display: flex;
+    gap: 20px;
+}
+
+#foot_plug a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+#right-footer_p {
+    display: flex;
+    gap: 25px;
+}
+
+#container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    
+}
+
+.text{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    /* background-color: brown; */
+}
+
+.loading{
+    margin-top: 3px;
+    margin-left: 2px;
+    width: 5%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* background-color: blueviolet; */
+}
+
+.loading .line-box{
+   
+    width: 100%;
+    height: 3px;
+    /* border:  2px solid black;  */
+    border-radius: 4px; 
+}
+
+.loading .line-box .line{
+    height: 3px;
+    background-color: black;
+    animation: loading 0.5s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes loading{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+
+}
+  input[type=text], select, textarea{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    input[type=email], select, textarea{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    
+    /* Style the label to display next to the inputs */
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+      font-size: 20px;
+      color: white;
+    }
+    
+    /* Style the submit button */
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 100px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-left: 25%;
+    }
+   
+    
+    /* Style the container */
+    .container {
+      /* border-radius: 5px;
+      background-color: #f2f2f2;
+      /* padding: 20px; 
+      transform: translate(-50%, -50%); */
+      position:fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 450px;
+      height: 550px;
+      padding: 50px 40px;
+      box-sizing: border-box;
+      box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+      border-radius: 10px;
+      background-color: rgb(9, 9, 33);
+    }
+   .container h2{
+      margin-left: 34%;
+      color: #fff;
+   }
+    
+    /* Floating column for labels: 25% width */
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    
+    /* Floating column for inputs: 75% width */
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 80%;
+        margin-left: 0;
+        margin-top: 0;
+      }
+      input[type=text], select, textarea{
+          width: 100%;
+    }
+    input[type=email], select, textarea{
+      width: 100%;
+    }
+    .container {
+     
+      height: 600px;
+  }
+    }
+    
+  
+  
+  

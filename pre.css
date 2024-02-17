@@ -1,0 +1,55 @@
+body{
+    background-color: darkgray;
+
+}
+#container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    /* background-color: brown; */
+}
+
+.loading{
+    margin-top: 3px;
+    margin-left: 2px;
+    width: 5%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* background-color: blueviolet; */
+}
+
+.loading .line-box{
+   
+    width: 100%;
+    height: 3px;
+    /* border:  2px solid black;  */
+    border-radius: 4px; 
+}
+
+.loading .line-box .line{
+    height: 3px;
+    background-color: black;
+    animation: loading 0.5s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes loading{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+
+}
